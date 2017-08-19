@@ -8,3 +8,23 @@ body{
     
     font-family: 'Oswald', sans-serif;
 }
+table {
+     border: black 5px solid;
+    border-collapse: separate!important;
+}
+
+tr {
+  border: green 5px solid;
+}
+tbody {
+  border: blue 5px solid;
+}
+td {
+  border: orange 5px solid;
+  background-color: orange
+}
+thead{
+    
+    background-color: #00796b;
+    
+}

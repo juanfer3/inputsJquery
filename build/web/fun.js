@@ -2,8 +2,8 @@ $(document).ready(function () {
     var contador = $('.data').length;
     contador = contador + 1;
     console.log(contador);
-    
-    
+
+
     $('#myBoton').click(function () {
         var data = [];
 
@@ -23,10 +23,22 @@ $(document).ready(function () {
 
         console.log(data);
     });
-    
-    
+
+
     $('#eliminar').click(function () {
-       $('.data').last().remove();
+        $('.data').last().remove();
+    });
+
+    $('#pintar').click(function () {
+
+        var num = $('#coordenadas').val();
+
+        var coordenadas = num.split(',');
+
+        for (var i = 0; i < coordenadas.length; i++) {
+          
+           $('table').find('td').eq(coordenadas[i]-1).css({"background-color":"#1e88e5"});
+        }
     });
 
 });
